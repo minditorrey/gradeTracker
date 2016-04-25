@@ -25,6 +25,8 @@ function createNewGrade(e) {
 	$('#letterGrade').val('');
 	$('#cumulativeGrade').val('');
 
+	debugger;
+
 	$.post('/api/grades', newGrade)
 		.done(() => {
 
