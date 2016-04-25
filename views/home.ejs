@@ -11,7 +11,7 @@
     <script src="home.js"></script>
 </head>
 <body>
-	  <div class="container-fluid">
+	<div class="container-fluid">
 
     <h1>Grade Tracker</h1>
     <h2>A nifty place to keep track of your grades!</h2>
@@ -68,6 +68,32 @@
             </div>
         </div>
     </div>
+
+    <table class="table">
+    	<thead>
+    		<tr>
+    			<th>Name</th>
+    			<th>Score</th>
+    			<th>Total</th>
+    			<th>Grade</th>
+    			<th>Cumulative Grade</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<% for(var i = 0; i < grades.length; i++) { %>
+				<tr>
+    				<td><%= grades[i].name %></td>
+    				<td><%=grades[i].score %></td>
+    				<td><%= grades[i].totalPoints %></td>
+    				<td><%= grades[i].letterGrade %></td>
+    				<td><%= grades[i].cumulativeGrade %></td>
+    			</tr>
+    		<% } %>
+
+
+    	</tbody>
+    </table>
+
 </div>
 </body>
 </html>
