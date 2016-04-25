@@ -29,7 +29,7 @@ function createNewGrade(e) {
 			}
 		},
 
-		cumulativeGrade: $('#cumulativeGrade').val()
+		cumulativeGrade: 
 	};
 
 	$('#name').val('');
