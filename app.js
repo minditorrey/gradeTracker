@@ -6,7 +6,7 @@ var express = require('express');
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
 
-// var Grade = require('./models/grade');
+var Grade = require('./models/grade');
 
 var app = express();
 
@@ -20,7 +20,12 @@ app.set('view engine', 'ejs')
 //plug in router
 app.use('/api', require('./routes/api'));
 
+app.get('/', (req, res) => {
 
+	Grade.get((err, grades) => {
+	res.render('home');
+	})
+})
 
 
 
