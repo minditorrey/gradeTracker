@@ -1,0 +1,22 @@
+{
+  "name": "gradeTracker",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Mindi Torrey <minditorrey@me.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/minditorrey/gradeTracker",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.3",
+    "moment": "^2.13.0"
+  }
+}

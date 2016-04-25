@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">	
+	<title>GradeTracker</title>
+   
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="home.js"></script>
+</head>
+<body>
+	  <div class="container-fluid">
+
+    <h1>Grade Tracker</h1>
+    <h2>A nifty place to keep track of your grades!</h2>
+    <button type="button" class="btn btn-large newGrade"  data-target="#myModal">Track Grade</button>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form role="form">
+                  <div class="form-group">
+                    <label id="name">Name</label>
+                    <input type="name" class="form-control"
+                      id="name" placeholder="First Last"/>
+                  </div>
+                  <div class="form-group">
+                    <label id="score">score</label>
+                      <input id="score"type="score" class="form-control" placeholder="100">
+                  </div>
+                  <div class="form-group">
+                    <label id="totalPoints">Total Points</label>
+                      <input type="totalPoints" class="form-control"
+                          id="totalPoints" placeholder="100"/>
+                  </div>
+				  <div class="form-group">
+                    <label id="letterGrade">Letter Grade</label>
+                      <input type="letterGrade" class="form-control"
+                          id="letterGrade" placeholder="A"/>
+                  </div>
+                  <div class="form-group">
+                    <label id="cumulativeGrade">Cumulative Class Grade</label>
+                      <input type="cumulativeGrade" class="form-control"
+                          id="cumulativeGrade" placeholder="100"/>
+                  </div>
+                </form>    
+            </div><!-- Modal Body-->
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Close
+                </button>
+                <button type="button" class="btn btn-primary" id="submitNewGrade">
+                    Save Grade
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

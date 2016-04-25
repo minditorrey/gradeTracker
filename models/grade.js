@@ -19,7 +19,7 @@ exports.get = function(cb) {
 
 exports.create = function(grade, cb) {
 	//validation
-	if(!grade.name || !grade.score) {
+	if(!grade.score) {
 		return cb('Please fill out all fields.')
 	}
 

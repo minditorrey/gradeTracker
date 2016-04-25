@@ -23,7 +23,11 @@ app.use('/api', require('./routes/api'));
 app.get('/', (req, res) => {
 
 	Grade.get((err, grades) => {
-	res.render('home');
+		if(err) {
+		res.render('error', {error: err});
+		} else {
+		res.render('home', {grades: grades});
+		}
 	})
 })
 
